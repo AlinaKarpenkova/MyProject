@@ -1,0 +1,265 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .25s, padding .25s;
+}
+
+header.top ul li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header ul li a:hover,
+header ul li.active a {
+    color: rgb(188, 236, 15);
+    text-decoration: none;
+}
+
+.lp-content {
+    padding: 40px 0;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.lp-content h2 {
+    text-align: center;
+    color: rgb(188, 236, 15);
+    margin-bottom: 20px;
+}
+
+footer {
+    background: whitesmoke;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright {
+    background: rgb(188, 236, 15);
+}
+
+footer p {
+    margin-bottom: 0.7em;
+}
+
+/* Слайдшоу */
+
+#slideshow .lp-content {
+    padding: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background: #fff;
+    border-radius: 100%;
+    opacity: 0.75;
+    text-align: center;
+    transition: opacity .25s;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    opacity: 0.95;
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus {
+    outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: 25px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: 25px;
+}
+
+.owl-carousel .owl-nav button.owl-prev i,
+.owl-carousel .owl-nav button.owl-next i {
+    color: rgb(188, 236, 15);
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.owl-dots button.owl-dot {
+    display: inline-block;
+    padding: 0 10px !important;
+    opacity: 0.75;
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.owl-dots button.owl-dot span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    transition: background-color .25s;
+}
+
+.owl-dots button.owl-dot.active span {
+    background: rgb(188, 236, 15);
+}
+
+/* Табы */
+
+.lp-tabs {
+    padding: 20px;
+}
+
+.lp-tabs .lp-tabs-titles ul {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.lp-tabs .lp-tabs-titles ul li {
+    display: inline-block;
+    background: #ccc;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: color .25s, background-color .25s;
+}
+
+.lp-tabs .lp-tabs-titles ul li:hover,
+.lp-tabs .lp-tabs-titles ul li.active {
+    background: rgb(188, 236, 15);
+    color: #fff;
+}
+
+.lp-tabs .lp-tabs-content {
+    position: relative;
+}
+
+.lp-tabs .lp-tabs-content .lp-tab {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+/* Всплывающие окна */
+
+.lp-popup {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#goods .lp-tab .btn {
+    background: rgb(35, 182, 219);
+    border-color: transparent;
+}
+
+#goods .lp-tab .btn:hover {
+    background: rgb(35, 182, 219);
+}
+
+#goods .lp-tab .btn:focus {
+    box-shadow: none;
+}
+
+/* Прайс-лист */
+
+#prices table th {
+    background: rgb(173, 161, 161);
+    color: #fff;
+    text-align: center;
+    -webkit-user-select: none;
+}
+
+#prices table th[ng-click] {
+    cursor: pointer;
+}
+
+#prices table td i {
+    color: orange;
+}
+
+#prices .lp-prices-loader {
+    text-align: center;
+}
+
+#prices .lp-prices-loader i {
+    display: inline-block;
+    font-size: 2em;
+    color: #ccc;
+    animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#lp-map {
+    height: 100%;
+}
+
+.lp-slider2 img {
+    height: 280px;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    div.lp-slider1 {
+        height: 20vh !important;
+    }
+}
+
+.border-dotted {
+    border: 1px dashed #bdbdbd;
+    padding: 0.5em;
+    border-radius: 5px;
+}
